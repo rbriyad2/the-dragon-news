@@ -3,7 +3,6 @@ import logo from "../../assets/logo.png";
 import moment from 'moment';
 import Button from 'react-bootstrap/Button';
 import Marquee from "react-fast-marquee";
-import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -20,25 +19,7 @@ const Header = () => {
 
 </Marquee>
       </div>
-
-      <Navbar collapseOnSelect expand="lg" >
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Nav.Link href="#pricing">Career</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-            <Nav.Link href="#deets"> <Button variant="secondary">Login</Button></Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      
     </div>
   );
 };
